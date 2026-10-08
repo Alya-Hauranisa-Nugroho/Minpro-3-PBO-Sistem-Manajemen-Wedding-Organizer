@@ -99,7 +99,7 @@ public class WeddingOrganizerMinpro3 {
                 case 5 -> {
                     boolean berjalanCetak = true;
                     while (berjalanCetak) {
-                        Menu.tampilkanMenuCetakDokumen();5
+                        Menu.tampilkanMenuCetakDokumen();
                         int pilihanCetak = InputValidator.bacaPilihan(scanner, "Pilih menu (1-3): ", 1, 3);
 
                         switch (pilihanCetak) {
