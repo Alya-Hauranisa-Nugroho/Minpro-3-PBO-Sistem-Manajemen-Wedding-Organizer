@@ -17,14 +17,6 @@ public class Menu {
         System.out.println("5. Menu Cetak Dokumen");
         System.out.println("6. Keluar >>>");
     }
-    
-    public static void tampilkanMenuCetakDokumen() {
-        System.out.println("\n=====================================");
-        System.out.println("|        MENU CETAK DOKUMEN         |");
-        System.out.println("=====================================");
-        System.out.println("1. Cetak Invoice Pemesanan Wedding");
-        System.out.println("2. Cetak Pembayaran Vendor");
-    }
 
     public static void tampilkanMenuTambah() {
         System.out.println("\n=====================================");
@@ -68,6 +60,15 @@ public class Menu {
         System.out.println("3. Hapus Pemesanan Wedding");
         System.out.println("4. Hapus Vendor");
         System.out.println("5. Kembali ke Menu Utama");
+    }
+    
+    public static void tampilkanMenuCetakDokumen() {
+        System.out.println("\n=====================================");
+        System.out.println("|        MENU CETAK DOKUMEN         |");
+        System.out.println("=====================================");
+        System.out.println("1. Cetak Invoice Pemesanan Wedding");
+        System.out.println("2. Cetak Pembayaran Vendor");
+        System.out.println("3. Kembali ke Menu Utama");
     }
 
     public static void tampilkanMenuJenisVendor() {

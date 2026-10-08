@@ -24,7 +24,6 @@ public abstract class Vendor {
         return noTelepon;
     }
 
-    // Abstract Methods (Penerapan Abstraction)
     public abstract String getJenisVendor();
 
     public abstract int getHarga();

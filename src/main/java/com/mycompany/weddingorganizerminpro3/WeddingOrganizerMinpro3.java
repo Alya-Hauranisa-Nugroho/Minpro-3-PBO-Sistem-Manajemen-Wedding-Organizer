@@ -97,13 +97,20 @@ public class WeddingOrganizerMinpro3 {
                     }
                 }
                 case 5 -> {
-                    Menu.tampilkanMenuCetakDokumen();
-                    int pilihanCetak = InputValidator.bacaPilihan(scanner, "Pilih menu (1-2): ", 1, 2);
+                    boolean berjalanCetak = true;
+                    while (berjalanCetak) {
+                        Menu.tampilkanMenuCetakDokumen();5
+                        int pilihanCetak = InputValidator.bacaPilihan(scanner, "Pilih menu (1-3): ", 1, 3);
 
-                    switch (pilihanCetak) {
-                        case 1 -> weddingCRUD.cetakInvoicePemesanan();
-                        case 2 -> weddingCRUD.cetakPembayaranVendor();
-                        default -> Pesan.tampilkanPesan("Pilihan kamu tidak valid ^__^");
+                        switch (pilihanCetak) {
+                            case 1 -> weddingCRUD.cetakInvoicePemesanan();
+                            case 2 -> weddingCRUD.cetakPembayaranVendor();
+                            case 3 -> {
+                                berjalanCetak = false;
+                                Pesan.tampilkanPesan("Kembali ke menu utama yah :D");
+                            }
+                            default -> Pesan.tampilkanPesan("Pilihan kamu tidak valid ^__^");
+                        }
                     }
                 }
                 case 6 -> berjalan = false;
